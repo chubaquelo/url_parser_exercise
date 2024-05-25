@@ -11,7 +11,7 @@ const parseUrl = (urlFormat, urlInstance) => {
   const variableKeys = {};
   const urlFormatValues = urlFormat.split('/');
 
-  for ([idx, pathValue] of urlFormatValues.entries()) {
+  for (const [idx, pathValue] of urlFormatValues.entries()) {
     if (pathValue.startsWith(':')) {
       variableKeys[pathValue.slice(1)] = idx
     }
@@ -28,7 +28,7 @@ const parseUrl = (urlFormat, urlInstance) => {
 
   const searchParams = new URLSearchParams(queryParams);
 
-  for (key of [...searchParams.keys()]) {
+  for (const key of [...searchParams.keys()]) {
     const value = searchParams.get(key)
     results[key] = parseInt(value) || value
   };
