@@ -1,0 +1,23 @@
+{
+  "name": "url_parser_exercise",
+  "version": "1.0.0",
+  "description": "A simple function to parse URL param values based on a format template also given to the function",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "parseURL"
+  ],
+  "jest": {
+    "verbose": true
+  },
+  "wallaby": {
+    "slowTestThreshold": 200
+  },
+  "author": "Sergio Obolevich",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
