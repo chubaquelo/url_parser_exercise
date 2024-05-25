@@ -36,5 +36,4 @@ const parseUrl = (urlFormat, urlInstance) => {
   return results;
 };
 
-console.log(parseUrl(':carpeta/indice/:valor', 'imagenes/3/imagen.jpg?witdh=375&height=150'));
 module.exports = parseUrl;
